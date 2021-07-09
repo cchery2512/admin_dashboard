@@ -43,11 +43,11 @@ class _DesktopBody extends StatelessWidget {
     return Container(
       width: size.width,
       height: size.height * 0.95,
-      color: Colors.red,
+      color: Colors.black,
       child: Row(
         children: [
           //Twitter Background
-          BackgroundTwitter(),
+          Expanded(child: BackgroundTwitter()),
           //View Container
           Container(
             width: 600,
@@ -90,6 +90,7 @@ class _MobileBody extends StatelessWidget {
           ),
           Container(
             width: double.infinity,
+            height: 400,
             child: BackgroundTwitter(),
           )
         ],
